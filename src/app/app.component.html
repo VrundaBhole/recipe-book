@@ -1,0 +1,41 @@
+<!-- <button (click)="clicked()">Click on me</button>
+<p>{{clickedMsg}}</p>
+<button (click)="secondButton()">Second Button</button>
+<p *ngIf="serverCreated; else noserver" [ngStyle]="{backgroundColor:getCOlor()}">{{serverCratedd}}</p>
+<ng-template #noserver>
+  <p>No server was created!</p>
+
+</ng-template>
+
+<div *ngFor="let arry of  servers">{{arry}}</div>
+
+
+
+<button (click)="toggle=!toggle">Display Details</button>
+
+<p *ngIf="toggle">
+Secret password tuna6
+</p>
+
+
+
+<button (click)="onToggleDisplay()">Display Details</button>
+<p *ngIf="toggle">
+Secret password tuna6
+</p>
+<div *ngFor="let item of log"
+ [ngStyle]="{backgroundColor:getcolor(item)}"
+>{{item}}</div>
+ -->
+<app-header (featureSelected)="featureselected($event)"></app-header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <router-outlet></router-outlet>
+      <!-- <app-recipes *ngIf="loadedFeature==='recipe'"> </app-recipes>
+      <app-shopping-list *ngIf="loadedFeature!=='recipe'"></app-shopping-list> -->
+
+    </div>
+  </div>
+</div>
